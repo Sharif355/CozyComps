@@ -40,11 +40,13 @@ const Banner = () => {
                   />
                 </svg>
               </button>
-              <img
-                className="w-[300px] md:w-[500px] lg:w-[1000px]"
-                src="https://i.ibb.co/5TgbrJp/bannercover.png"
-                alt=""
-              />
+              <figure className="flex justify-center items-center pt-2">
+                <img
+                  className="w-[300px] md:w-[500px] lg:w-[1000px]"
+                  src="https://i.ibb.co/5TgbrJp/bannercover.png"
+                  alt=""
+                />
+              </figure>
             </div>
           </div>
         </div>

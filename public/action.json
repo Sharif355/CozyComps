@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Rescue, Love, Repeat",
+    "subtitle": "Embrace a Furry Friend Today",
+    "image": "https://i.ibb.co/Nx72b6Y/action4.jpg",
+    "description": "Unlock the joys of pet parenthood. Rescue a pet and experience boundless love. Every adoption tells a story of compassion and kindness. Find your perfect companion now!",
+    "ctaButton": {
+      "text": "Discover Adoption Stories",
+      "link": "/adoption-stories"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Transform Lives, Adopt Today",
+    "subtitle": "Make a Difference with a Furry Friend",
+    "image": "https://i.ibb.co/rQ6LXs4/action3.jpg",
+    "description": "Change a life by adopting a pet. Your love can transform their world. Join the journey of compassion and companionship. Begin your adoption adventure now!",
+    "ctaButton": {
+      "text": "Start Your Adoption Journey",
+      "link": "/start-adoption"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Give Love, Adopt a Pet",
+    "subtitle": "Open Your Heart to a Furry Companion",
+    "image": "https://i.ibb.co/8x2WvLX/action2.jpg",
+    "description": "Experience the joy of adoption. Adopting a pet is a promise of love and care. Your new best friend is waiting. Give them a forever home today!",
+    "ctaButton": {
+      "text": "Find Your Forever Friend",
+      "link": "/forever-friend"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Join the Adoption Movement",
+    "subtitle": "Welcome a Furry Companion into Your Life",
+    "image": "https://i.ibb.co/8MxNW7q/action1.jpg",
+    "description": "Be part of something beautiful. Join the adoption movement and bring joy to a pet in need. Transform their world and yours. Start your adoption journey today!",
+    "ctaButton": {
+      "text": "Join the Movement",
+      "link": "/join-adoption"
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Cats",
+      "imageUrl": "https://i.ibb.co/Q8mGv84/cat.jpg",
+      "details": "Independent and playful. Strong bonds with owners. Unique personalities in various breeds."
+    },
+    {
+      "id": 2,
+      "name": "Dogs",
+      "imageUrl": "https://i.ibb.co/RggwLHJ/dog.jpg",
+      "details": "Loyal companions. Unconditional love. Versatile and trainable with various breeds and sizes."
+    },
+    {
+      "id": 3,
+      "name": "Rabbits",
+      "imageUrl": "https://i.ibb.co/QmSFt5y/rabbit.jpg",
+      "details": "Gentle, social. Requires care, balanced diet, safe environment. Forms close bonds with owners."
+    },
+    {
+      "id": 4,
+      "name": "Fish",
+      "imageUrl": "https://i.ibb.co/vVrQKkV/fish.jpg",
+      "details": "Diverse species, colors, and sizes. Well-balanced aquarium crucial. Relaxing and rewarding hobby."
+    },
+    {
+      "id": 5,
+      "name": "Birds",
+      "imageUrl": "https://i.ibb.co/Tk3bpyM/birds.jpg",
+      "details": "Intelligent, social. Vocalizations, vibrant plumage. Unique needs for a happy, healthy life."
+    },
+    {
+      "id": 6,
+      "name": "Hamsters",
+      "imageUrl": "https://i.ibb.co/DKQRBhs/hams.jpg",
+      "details": "Small, nocturnal. Adorable. Requires a comfortable cage with bedding. Low-maintenance companion."
+    }
+  ]
+  
