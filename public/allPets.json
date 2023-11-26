@@ -1,0 +1,302 @@
+[
+  {
+    "category": "cat",
+    "name": "Whiskers",
+    "image": "https://i.ibb.co/YBPNSt3/cat1.jpg",
+    "age": 2,
+    "location": "Suburbia",
+    "date": "2023-11-25",
+    "nature": "Playful and Children-Friendly",
+    "breed": "Siamese"
+  },
+  {
+    "category": "dog",
+    "name": "Buddy",
+    "image": "https://i.ibb.co/dj6yRbN/dog1.png",
+    "age": 3,
+    "location": "Countryside",
+    "date": "2023-11-24",
+    "nature": "Loyal and Friendly to Other Pets",
+    "breed": "Golden Retriever"
+  },
+  {
+    "category": "bird",
+    "name": "Sunny",
+    "image": "https://i.ibb.co/wd8tSy0/bird1.jpg",
+    "age": 1,
+    "location": "City Park",
+    "date": "2023-11-23",
+    "nature": "Colorful and Sociable",
+    "breed": "Canary"
+  },
+  {
+    "category": "fish",
+    "name": "Finny",
+    "image": "https://i.ibb.co/k0wT6Lw/fish3.jpg",
+    "age": 1,
+    "location": "Underwater Castle",
+    "date": "2023-11-22",
+    "nature": "Calm and Serene",
+    "breed": "Goldfish"
+  },
+  {
+    "category": "rabbit",
+    "name": "Thumper",
+    "image": "https://i.ibb.co/4jfgFyF/rabbit1.jpg",
+    "age": 2,
+    "location": "Meadow Wonderland",
+    "date": "2023-11-21",
+    "nature": "Gentle and Social",
+    "breed": "Holland Lop"
+  },
+  {
+    "category": "hamsters",
+    "name": "Nibbles",
+    "image": "https://i.ibb.co/sRF7Rbh/ham5.jpg",
+    "age": 1,
+    "location": "Cozy Nest",
+    "date": "2023-11-20",
+    "nature": "Adorable and Playful",
+    "breed": "Dwarf Hamster"
+  },
+  {
+    "category": "cat",
+    "name": "Mittens",
+    "image": "https://i.ibb.co/BNbrG08/cat2.jpg",
+    "age": 2,
+    "location": "Urban Oasis",
+    "date": "2023-11-19",
+    "nature": "Independent and Affectionate",
+    "breed": "Persian"
+  },
+  {
+    "category": "dog",
+    "name": "Max",
+    "image": "https://i.ibb.co/JpZmJH8/dog2.jpg",
+    "age": 3,
+    "location": "Mountain Retreat",
+    "date": "2023-11-18",
+    "nature": "Energetic and Playful",
+    "breed": "German Shepherd"
+  },
+  {
+    "category": "bird",
+    "name": "Feathers",
+    "image": "https://i.ibb.co/9pRBXKX/bird3.jpg",
+    "age": 1,
+    "location": "Sky Sanctuary",
+    "date": "2023-11-17",
+    "nature": "Vocal and Vibrant",
+    "breed": "Parakeet"
+  },
+  {
+    "category": "fish",
+    "name": "Splash",
+    "image": "https://i.ibb.co/3MmSs1y/fish5.jpg",
+    "age": 1,
+    "location": "Tropical Lagoon",
+    "date": "2023-11-16",
+    "nature": "Diverse and Fascinating",
+    "breed": "Beta Fish"
+  },
+  {
+    "category": "rabbit",
+    "name": "Cotton",
+    "image": "https://i.ibb.co/2ykg5vZ/rabbit2.jpg",
+    "age": 2,
+    "location": "Forest Glade",
+    "date": "2023-11-15",
+    "nature": "Curious and Cuddly",
+    "breed": "Dutch Rabbit"
+  },
+  {
+    "category": "hamsters",
+    "name": "Cheese",
+    "image": "https://i.ibb.co/zX9Hwd1/ham4.jpg",
+    "age": 1,
+    "location": "Cheesy Hideout",
+    "date": "2023-11-14",
+    "nature": "Small and Low-Maintenance",
+    "breed": "Syrian Hamster"
+  },
+  {
+    "category": "cat",
+    "name": "Shadow",
+    "image": "https://i.ibb.co/NTL72r3/cat3.jpg",
+    "age": 2,
+    "location": "Moonlit Rooftop",
+    "date": "2023-11-13",
+    "nature": "Adaptable and Graceful",
+    "breed": "Maine Coon"
+  },
+  {
+    "category": "dog",
+    "name": "Rocky",
+    "image": "https://i.ibb.co/YdK8XR3/dog3.jpg",
+    "age": 1,
+    "location": "Rocky Mountains",
+    "date": "2023-11-12",
+    "nature": "Strong and Active",
+    "breed": "Boxer"
+  },
+  {
+    "category": "bird",
+    "name": "Tweety",
+    "image": "https://i.ibb.co/Rpn5SjT/bird5.jpg",
+    "age": 1,
+    "location": "Treehouse Haven",
+    "date": "2023-11-11",
+    "nature": "Chirpy and Playful",
+    "breed": "Cockatiel"
+  },
+  {
+    "category": "fish",
+    "name": "Bubbles",
+    "image": "https://i.ibb.co/XkTc5Pp/fish1.jpg",
+    "age": 1,
+    "location": "Coral Reef",
+    "date": "2023-11-10",
+    "nature": "Colorful and Relaxing",
+    "breed": "Angelfish"
+  },
+  {
+    "category": "rabbit",
+    "name": "Fluffy",
+    "image": "https://i.ibb.co/7ncxbgf/rabbit4.jpg",
+    "age": 2,
+    "location": "Burrow Bliss",
+    "date": "2023-11-09",
+    "nature": "Fluffy and Adorable",
+    "breed": "Lionhead Rabbit"
+  },
+  {
+    "category": "hamsters",
+    "name": "Nibbler",
+    "image": "https://i.ibb.co/sRF7Rbh/ham5.jpg",
+    "age": 1,
+    "location": "Tiny Tunnels",
+    "date": "2023-11-08",
+    "nature": "Sweet and Inquisitive",
+    "breed": "Roborovski Hamster"
+  },
+  {
+    "category": "cat",
+    "name": "Oliver",
+    "image": "https://i.ibb.co/6Z3ThjL/cat4.jpg",
+    "age": 2,
+    "location": "Historic District",
+    "date": "2023-11-07",
+    "nature": "Graceful and Elegant",
+    "breed": "Ragdoll"
+  },
+  {
+    "category": "dog",
+    "name": "Bailey",
+    "image": "https://i.ibb.co/3SzdvSF/dog4.jpg",
+    "age": 3,
+    "location": "Sunny Suburb",
+    "date": "2023-11-06",
+    "nature": "Friendly and Playful",
+    "breed": "Beagle"
+  },
+  {
+    "category": "bird",
+    "name": "Polly",
+    "image": "https://i.ibb.co/s20zCNF/bird4.jpg",
+    "age": 1,
+    "location": "Canopy Cove",
+    "date": "2023-11-05",
+    "nature": "Colorful and Melodious",
+    "breed": "Budgerigar"
+  },
+  {
+    "category": "fish",
+    "name": "Neptune",
+    "image": "https://i.ibb.co/K6tbR6q/fish2.jpg",
+    "age": 1,
+    "location": "Ocean Palace",
+    "date": "2023-11-04",
+    "nature": "Majestic and Tranquil",
+    "breed": "Koi"
+  },
+  {
+    "category": "rabbit",
+    "name": "Snowball",
+    "image": "https://i.ibb.co/SKpJz6X/rabbit3.jpg",
+    "age": 2,
+    "location": "Snowy Hills",
+    "date": "2023-11-03",
+    "nature": "Furry and Inquisitive",
+    "breed": "Flemish Giant"
+  },
+  {
+    "category": "hamsters",
+    "name": "Peanut",
+    "image": "https://i.ibb.co/xmj6Xr9/ham2.jpg",
+    "age": 1,
+    "location": "Nutty Nook",
+    "date": "2023-11-02",
+    "nature": "Adorable and Curious",
+    "breed": "Teddy Bear Hamster"
+  },
+  {
+    "category": "cat",
+    "name": "Milo",
+    "image": "https://i.ibb.co/r7k1t5Y/cat5.png",
+    "age": 2,
+    "location": "Lakeside Haven",
+    "date": "2023-11-01",
+    "nature": "Gentle and Affectionate",
+    "breed": "Siberian"
+  },
+  {
+    "category": "dog",
+    "name": "Charlie",
+    "image": "https://i.ibb.co/KF5PDVL/dog5.jpg",
+    "age": 3,
+    "location": "Beach Retreat",
+    "date": "2023-10-31",
+    "nature": "Energetic and Friendly",
+    "breed": "Labrador Retriever"
+  },
+  {
+    "category": "bird",
+    "name": "Kiwi",
+    "image": "https://i.ibb.co/cvyV9Kr/bird2.jpg",
+    "age": 1,
+    "location": "Aviary Escape",
+    "date": "2023-10-30",
+    "nature": "Charming and Playful",
+    "breed": "Cockatoo"
+  },
+  {
+    "category": "fish",
+    "name": "Splashy",
+    "image": "https://i.ibb.co/Z28RFsD/fish4.jpg",
+    "age": 1,
+    "location": "Waterfall Oasis",
+    "date": "2023-10-29",
+    "nature": "Graceful and Colorful",
+    "breed": "Guppy"
+  },
+  {
+    "category": "rabbit",
+    "name": "Hopper",
+    "image": "https://i.ibb.co/2ykg5vZ/rabbit2.jpg",
+    "age": 2,
+    "location": "Bunny Burrows",
+    "date": "2023-10-28",
+    "nature": "Lively and Cute",
+    "breed": "Mini Lop"
+  },
+  {
+    "category": "hamsters",
+    "name": "Squeaky",
+    "image": "https://i.ibb.co/55XcDzy/ham1.jpg",
+    "age": 1,
+    "location": "Silent Wheels",
+    "date": "2023-10-27",
+    "nature": "Sweet and Playful",
+    "breed": "Chinese Hamster"
+  }
+]

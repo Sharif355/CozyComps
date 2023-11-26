@@ -12,8 +12,22 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import PetsIcon from "@mui/icons-material/Pets";
+import { NavLink } from "react-router-dom";
 
-const pages = ["Home", "Pet Listing", "Donation Campaigns"];
+// const pages = ["Home", "Pet Listing", "Donation Campaigns"];
+const pages = (
+  <div className="flex flex-col md:flex-row">
+    <NavLink className="ml-2" to="/">
+      Home
+    </NavLink>
+    <NavLink className="ml-2" to="/allPets">
+      Pet Listing
+    </NavLink>
+    <NavLink className="ml-2" to="/donation">
+      Donation Campaigns
+    </NavLink>
+  </div>
+);
 const settings = ["Dashboard", "Login", "Logout"];
 
 const Navbar = () => {
@@ -36,7 +50,7 @@ const Navbar = () => {
   };
   return (
     <AppBar
-      sx={{ background: "#063970", marginBottom: "40px", position: "static" }}
+      sx={{ background: "#063970", marginBottom: "40px", position: "sticky" }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -89,11 +103,7 @@ const Navbar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              {pages}
             </Menu>
           </Box>
           <PetsIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
@@ -116,20 +126,7 @@ const Navbar = () => {
             CozyComps
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                  textTransform: "none",
-                }}
-              >
-                {page}
-              </Button>
-            ))}
+            {pages}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

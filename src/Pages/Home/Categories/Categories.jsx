@@ -12,7 +12,7 @@ import SectionHeader from "../../../Shared/SectionHeader";
 const Categories = () => {
   const [loadedData, setLoadedData] = useState([]);
   useEffect(() => {
-    fetch("categories.json")
+    fetch("http://localhost:5000/categories")
       .then((response) => response.json())
       .then((data) => setLoadedData(data));
   }, []);
@@ -51,12 +51,12 @@ const Categories = () => {
                 <img
                   className="rounded-lg w-full h-60 object-cover"
                   src={data.imageUrl}
-                  alt={data.name}
+                  alt={data.category}
                 />
 
                 <div className="">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-[#063970] dark:text-white">
-                    {data.name}
+                    {data.category}
                   </h5>
 
                   <p className="mb-3 font-normal text-gray-400 dark:text-gray-400 text-justify">
