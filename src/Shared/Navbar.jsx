@@ -7,30 +7,63 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
 import PetsIcon from "@mui/icons-material/Pets";
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../Auth/AuthProvider";
+import Swal from "sweetalert2";
 
-// const pages = ["Home", "Pet Listing", "Donation Campaigns"];
 const pages = (
   <div className="flex flex-col md:flex-row">
-    <NavLink className="ml-2" to="/">
+    <NavLink
+      style={({ isActive, isPending, isTransitioning }) => {
+        return {
+          fontWeight: isActive ? "semibold" : "",
+          color: isActive ? "white" : "gray",
+          viewTransitionName: isTransitioning ? "slide" : "",
+          backgroundColor: isPending ? "red" : "",
+        };
+      }}
+      className="ml-2"
+      to="/"
+    >
       Home
     </NavLink>
-    <NavLink className="ml-2" to="/allPets">
+    <NavLink
+      style={({ isActive, isPending, isTransitioning }) => {
+        return {
+          fontWeight: isActive ? "semibold" : "",
+          color: isActive ? "white" : "gray",
+          viewTransitionName: isTransitioning ? "slide" : "",
+          backgroundColor: isPending ? "red" : "",
+        };
+      }}
+      className="ml-2"
+      to="/allPets"
+    >
       Pet Listing
     </NavLink>
-    <NavLink className="ml-2" to="/donation">
+    <NavLink
+      style={({ isActive, isPending, isTransitioning }) => {
+        return {
+          fontWeight: isActive ? "semibold" : "",
+          color: isActive ? "white" : "gray",
+          viewTransitionName: isTransitioning ? "slide" : "",
+          backgroundColor: isPending ? "red" : "",
+        };
+      }}
+      className="ml-2"
+      to="/donation"
+    >
       Donation Campaigns
     </NavLink>
   </div>
 );
-const settings = ["Dashboard", "Login", "Logout"];
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -48,6 +81,17 @@ const Navbar = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  const handleLogOut = () => {
+    logOut().then(() => {
+      Swal.fire({
+        icon: "success",
+        text: "User LoggedOut Successfully",
+        confirmButtonText: "ok",
+      });
+    });
+  };
+
   return (
     <AppBar
       sx={{ background: "#063970", marginBottom: "40px", position: "sticky" }}
@@ -130,11 +174,35 @@ const Navbar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
+            {user ? (
+              <Tooltip title="Open Dashboard">
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                  <img
+                    className="rounded-full w-10"
+                    src={user.photoURL}
+                    alt={user.displayName}
+                  />
+                </IconButton>
+              </Tooltip>
+            ) : (
+              <NavLink
+                style={({ isActive, isPending, isTransitioning }) => {
+                  return {
+                    fontWeight: isActive ? "Bold" : "",
+                    color: isActive ? "white" : "gray",
+                    viewTransitionName: isTransitioning ? "slide" : "",
+                    backgroundColor: isPending ? "red" : "",
+                  };
+                }}
+                className="ml-2"
+                to="/login"
+              >
+                <button className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2">
+                  {" "}
+                  Login
+                </button>
+              </NavLink>
+            )}
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
@@ -151,11 +219,23 @@ const Navbar = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
+              <div className="flex flex-col ">
+                <NavLink
+                  style={({ isActive, isPending, isTransitioning }) => {
+                    return {
+                      fontWeight: isActive ? "semibold" : "",
+                      color: isActive ? "white" : "black",
+                      viewTransitionName: isTransitioning ? "slide" : "",
+                      backgroundColor: isPending ? "red" : "",
+                    };
+                  }}
+                  className="ml-2"
+                  to="/dashboard"
+                >
+                  Dashboard
+                </NavLink>
+                <button onClick={handleLogOut}>Logout</button>
+              </div>
             </Menu>
           </Box>
         </Toolbar>

@@ -1,7 +1,6 @@
 import { Divider } from "@mui/material";
 import { useEffect, useState } from "react";
-import VaccinesIcon from "@mui/icons-material/Vaccines";
-import ChildFriendlyIcon from "@mui/icons-material/ChildFriendly";
+
 import PetSearch from "./PetSearch";
 import SortByCategory from "./SortByCategory";
 import SortByDate from "./SortByDate";
@@ -94,8 +93,8 @@ const AllPets = () => {
                   src={pet.image}
                   alt={pet.name}
                 />
-                <div className="absolute top-0 hover:bg-gray-300 opacity-30  h-full w-full"></div>
-                <hr className="border-4 absolute bottom-0  md:bottom-8 lg:bottom-2 w-full border-blue-500" />
+                <div className="absolute bottom-0 hover:bg-gray-600 opacity-50  h-full w-full"></div>
+                <hr className="border-4 absolute bottom-0  md:bottom-0 w-full border-blue-500" />
               </div>
               <div className="space-y-3">
                 <h1 className="text-xl font-bold  py-3 font-roboto-slab">
@@ -112,13 +111,6 @@ const AllPets = () => {
                   <span className=" text-gray-500">{pet.breed}</span>
                   <Divider />
                 </p>
-                <p className="space-y-1">
-                  <span className="font-medium font-roboto-slab">
-                    Location:{" "}
-                  </span>
-                  <span className=" text-gray-500">{pet.location}</span>
-                  <Divider />
-                </p>
 
                 <p className="space-y-1">
                   <span className="font-medium font-roboto-slab">
@@ -129,18 +121,9 @@ const AllPets = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-white flex gap-5 justify-center m-5 shadow-sm p-2 font-roboto-slab text-sm">
-              <h4 className="flex flex-col  items-center">
-                <VaccinesIcon className="text-blue-400"></VaccinesIcon>{" "}
-                Vaccinated
-              </h4>
-              <h4 className="flex flex-col items-center font-roboto-slab">
-                <ChildFriendlyIcon className="text-blue-400"></ChildFriendlyIcon>{" "}
-                {pet.nature}{" "}
-              </h4>
-            </div>
+
             <Link to={`/allPets/${pet._id}`}>
-              <button className=" btn text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-md uppercase px-10 py-2 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <button className=" btn mt-5 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-md uppercase px-10 py-2 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 More Info
               </button>
             </Link>
