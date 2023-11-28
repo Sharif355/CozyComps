@@ -63,9 +63,14 @@ const Register = () => {
             photoURL: photo,
           });
 
-          axios.post("http://localhost:5000/userInfos", data).then((res) => {
-            console.log(res.data);
-          });
+          axios
+            .post(
+              " https://sever-side-mh7zut2tk-sharif355.vercel.app/userInfos",
+              data
+            )
+            .then((res) => {
+              console.log(res.data);
+            });
 
           form.reset();
           navigate(location.pathname ? location.pathname : "/");

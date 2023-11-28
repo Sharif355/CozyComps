@@ -54,7 +54,7 @@ const pages = (
         };
       }}
       className="ml-2"
-      to="/donation"
+      to="/campaign"
     >
       Donation Campaigns
     </NavLink>

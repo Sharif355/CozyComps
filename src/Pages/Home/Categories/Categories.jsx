@@ -12,7 +12,7 @@ import SectionHeader from "../../../Shared/SectionHeader";
 const Categories = () => {
   const [loadedData, setLoadedData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/categories")
+    fetch(" https://sever-side-mh7zut2tk-sharif355.vercel.app/categories")
       .then((response) => response.json())
       .then((data) => setLoadedData(data));
   }, []);

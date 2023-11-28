@@ -1,0 +1,74 @@
+[
+  {
+    "petName": "Whiskers",
+    "petImage": "https://i.ibb.co/2SX54zt/donation3.png",
+    "maxDonationAmount": 1000,
+    "donatedAmount": 250,
+    "targetAmount": 1000,
+    "raisedSoFar": 250,
+    "stillNeed": 750,
+    "title": "Help Whiskers Find a Loving Home",
+    "shortDescription": "Whiskers is a playful cat looking for a forever home. Your donation can make a difference in providing Whiskers with a safe and loving environment.",
+    "donationEndDate": "2023-12-15"
+  },
+  {
+    "petName": "Bella",
+    "petImage": "https://i.ibb.co/SRzscqs/donation6.png",
+    "maxDonationAmount": 800,
+    "donatedAmount": 400,
+    "targetAmount": 800,
+    "raisedSoFar": 400,
+    "stillNeed": 400,
+    "title": "Support Bella's Journey to Health",
+    "shortDescription": "Bella, a resilient dog, is undergoing medical treatment. Your contribution can help cover Bella's medical expenses and ensure she gets back to full health.",
+    "donationEndDate": "2023-12-18"
+  },
+  {
+    "petName": "Rocky",
+    "petImage": "https://i.ibb.co/Y8k08v5/donation5.jpg",
+    "maxDonationAmount": 1200,
+    "donatedAmount": 800,
+    "targetAmount": 1200,
+    "raisedSoFar": 800,
+    "stillNeed": 400,
+    "title": "Assist Rocky in Finding a Forever Family",
+    "shortDescription": "Rocky, a friendly rabbit, is seeking a loving family. Your donation can support Rocky's care and contribute to finding the perfect forever home for this adorable bunny.",
+    "donationEndDate": "2023-12-20"
+  },
+  {
+    "petName": "Sasha",
+    "petImage": "https://i.ibb.co/6BShv38/donation4.jpg",
+    "maxDonationAmount": 1500,
+    "donatedAmount": 600,
+    "targetAmount": 1500,
+    "raisedSoFar": 600,
+    "stillNeed": 900,
+    "title": "Empower Sasha's Journey to Wellness",
+    "shortDescription": "Sasha, a resilient parrot, is on a journey to recovery. Your donation can make a significant impact on Sasha's rehabilitation and help this vibrant bird soar once again.",
+    "donationEndDate": "2023-12-22"
+  },
+  {
+    "petName": "Oliver",
+    "petImage": "https://i.ibb.co/bgWKWKv/donation2.jpg",
+    "maxDonationAmount": 700,
+    "donatedAmount": 300,
+    "targetAmount": 700,
+    "raisedSoFar": 300,
+    "stillNeed": 400,
+    "title": "Secure a Bright Future for Oliver",
+    "shortDescription": "Oliver, an affectionate hamster, is in need of a caring home. Your contribution can ensure Oliver's well-being and provide him with a comfortable and loving environment.",
+    "donationEndDate": "2023-12-25"
+  },
+  {
+    "petName": "Milo",
+    "petImage": "https://i.ibb.co/yB57BQ1/donation1.jpg",
+    "maxDonationAmount": 1100,
+    "donatedAmount": 700,
+    "targetAmount": 1100,
+    "raisedSoFar": 700,
+    "stillNeed": 400,
+    "title": "Join Milo's Journey to Happiness",
+    "shortDescription": "Milo, a playful kitten, is looking for a forever playmate. Your donation can support Milo's care and contribute to creating a joyful and loving environment for this adorable cat.",
+    "donationEndDate": "2023-12-28"
+  }
+]

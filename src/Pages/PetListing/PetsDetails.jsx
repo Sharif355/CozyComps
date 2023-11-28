@@ -19,7 +19,10 @@ const PetsDetails = () => {
 
   const handleAdopt = (formData) => {
     axios
-      .post("http://localhost:5000/adopts", formData)
+      .post(
+        " https://sever-side-mh7zut2tk-sharif355.vercel.app/adopts",
+        formData
+      )
       .then((res) => alert("post added"))
       .catch((err) => {
         console.log(err.message);
