@@ -65,7 +65,7 @@ const Register = () => {
 
           axios
             .post(
-              " https://sever-side-mh7zut2tk-sharif355.vercel.app/userInfos",
+              " https://sever-side-6d8lipgds-sharif355.vercel.app/userInfos",
               data
             )
             .then((res) => {

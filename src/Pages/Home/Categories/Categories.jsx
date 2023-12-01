@@ -12,7 +12,7 @@ import SectionHeader from "../../../Shared/SectionHeader";
 const Categories = () => {
   const [loadedData, setLoadedData] = useState([]);
   useEffect(() => {
-    fetch(" https://sever-side-mh7zut2tk-sharif355.vercel.app/categories")
+    fetch(" https://sever-side-6d8lipgds-sharif355.vercel.app/categories")
       .then((response) => response.json())
       .then((data) => setLoadedData(data));
   }, []);
@@ -45,7 +45,7 @@ const Categories = () => {
         className="max-w-[90%] lg:max-w-full my-10"
       >
         {loadedData?.map((data) => (
-          <SwiperSlide key={data.id}>
+          <SwiperSlide key={data._id}>
             <div className=" max-w-md bg-white dark:bg-gray-800 dark:border-gray-700">
               <Link>
                 <img

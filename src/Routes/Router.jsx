@@ -8,11 +8,19 @@ import Register from "../Pages/Home/Register";
 import DonationCampaign from "../Pages/Donation/DonationCampaign";
 import CampaignDetails from "../Pages/Donation/CampaignDetails";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import AddPet from "../Pages/Dashboard/AddPet";
+import AddedPet from "../Pages/Dashboard/AddedPet";
+import AdoptionRequest from "../Pages/Dashboard/AdoptionRequest";
+import CreateCampaign from "../Pages/Dashboard/CreateCampaign";
+import MyCampaings from "../Pages/Dashboard/MyCampaings";
+import MyDonations from "../Pages/Dashboard/MyDonations";
+import Error from "../Error/Error";
 
 const routers = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
@@ -30,14 +38,16 @@ const routers = createBrowserRouter([
         path: "campaign/:id",
         element: <CampaignDetails></CampaignDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/donations/${params.id}`),
+          fetch(
+            `https://sever-side-6d8lipgds-sharif355.vercel.app/donations/${params.id}`
+          ),
       },
       {
         path: "allPets/:id",
         element: <PetsDetails></PetsDetails>,
         loader: ({ params }) =>
           fetch(
-            ` https://sever-side-mh7zut2tk-sharif355.vercel.app/allPets/${params.id}`
+            ` https://sever-side-6d8lipgds-sharif355.vercel.app/allPets/${params.id}`
           ),
       },
       {
@@ -48,9 +58,36 @@ const routers = createBrowserRouter([
         path: "register",
         element: <Register></Register>,
       },
+    ],
+  },
+  {
+    path: "dashboard",
+    element: <Dashboard></Dashboard>,
+    errorElement: <Error></Error>,
+    children: [
       {
-        path: "dashboard",
-        element: <Dashboard></Dashboard>,
+        path: "addPet",
+        element: <AddPet></AddPet>,
+      },
+      {
+        path: "addedPet",
+        element: <AddedPet></AddedPet>,
+      },
+      {
+        path: "request",
+        element: <AdoptionRequest></AdoptionRequest>,
+      },
+      {
+        path: "createCampaign",
+        element: <CreateCampaign></CreateCampaign>,
+      },
+      {
+        path: "myCampaigns",
+        element: <MyCampaings></MyCampaings>,
+      },
+      {
+        path: "myDonation",
+        element: <MyDonations></MyDonations>,
       },
     ],
   },
