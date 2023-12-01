@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../Pages/Home/Home";
 import Layout from "../Layout/Layout";
-import AllPets from "../Pages/PetListing/AllPets";
 import PetsDetails from "../Pages/PetListing/PetsDetails";
 import Login from "../Pages/Home/Login";
 import Register from "../Pages/Home/Register";
@@ -15,6 +14,10 @@ import CreateCampaign from "../Pages/Dashboard/CreateCampaign";
 import MyCampaings from "../Pages/Dashboard/MyCampaings";
 import MyDonations from "../Pages/Dashboard/MyDonations";
 import Error from "../Error/Error";
+import PrivateRoute from "./PrivateRoute";
+import AllUsers from "../Pages/Dashboard/AllUsers";
+import AllDonations from "../Pages/Dashboard/AllDonations";
+import AllPets from "../Pages/Dashboard/AllPets";
 
 const routers = createBrowserRouter([
   {
@@ -39,7 +42,7 @@ const routers = createBrowserRouter([
         element: <CampaignDetails></CampaignDetails>,
         loader: ({ params }) =>
           fetch(
-            `https://sever-side-6d8lipgds-sharif355.vercel.app/donations/${params.id}`
+            `https://sever-side-lit6jv4i9-sharif355.vercel.app/donations/${params.id}`
           ),
       },
       {
@@ -47,7 +50,7 @@ const routers = createBrowserRouter([
         element: <PetsDetails></PetsDetails>,
         loader: ({ params }) =>
           fetch(
-            ` https://sever-side-6d8lipgds-sharif355.vercel.app/allPets/${params.id}`
+            ` https://sever-side-lit6jv4i9-sharif355.vercel.app/allPets/${params.id}`
           ),
       },
       {
@@ -67,27 +70,76 @@ const routers = createBrowserRouter([
     children: [
       {
         path: "addPet",
-        element: <AddPet></AddPet>,
+        element: (
+          <PrivateRoute>
+            <AddPet></AddPet>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "users",
+        element: (
+          <PrivateRoute>
+            <AllUsers></AllUsers>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "allPet",
+        element: (
+          <PrivateRoute>
+            <AllPets></AllPets>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "allDonation",
+        element: (
+          <PrivateRoute>
+            <AllDonations></AllDonations>
+          </PrivateRoute>
+        ),
       },
       {
         path: "addedPet",
-        element: <AddedPet></AddedPet>,
+        element: (
+          <PrivateRoute>
+            <AddedPet></AddedPet>
+          </PrivateRoute>
+        ),
       },
       {
         path: "request",
-        element: <AdoptionRequest></AdoptionRequest>,
+        element: (
+          <PrivateRoute>
+            <AdoptionRequest></AdoptionRequest>
+          </PrivateRoute>
+        ),
       },
       {
         path: "createCampaign",
-        element: <CreateCampaign></CreateCampaign>,
+        element: (
+          <PrivateRoute>
+            {" "}
+            <CreateCampaign></CreateCampaign>
+          </PrivateRoute>
+        ),
       },
       {
         path: "myCampaigns",
-        element: <MyCampaings></MyCampaings>,
+        element: (
+          <PrivateRoute>
+            <MyCampaings></MyCampaings>
+          </PrivateRoute>
+        ),
       },
       {
         path: "myDonation",
-        element: <MyDonations></MyDonations>,
+        element: (
+          <PrivateRoute>
+            <MyDonations></MyDonations>
+          </PrivateRoute>
+        ),
       },
     ],
   },

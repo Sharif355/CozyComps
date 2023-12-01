@@ -65,7 +65,7 @@ const Register = () => {
 
           axios
             .post(
-              " https://sever-side-6d8lipgds-sharif355.vercel.app/userInfos",
+              " https://sever-side-lit6jv4i9-sharif355.vercel.app/userInfos",
               data
             )
             .then((res) => {
@@ -83,12 +83,27 @@ const Register = () => {
 
   const handleGoogle = () => {
     googleSignIn().then((res) => {
+      const userInfo = {
+        email: res.user?.email,
+        name: res.user?.displayName,
+        photo: res.user?.photoURL,
+      };
+      axios
+        .post(
+          " https://sever-side-lit6jv4i9-sharif355.vercel.app/userInfos",
+          userInfo
+        )
+        .then((res) => {
+          console.log(res.data);
+        });
+
       Swal.fire({
         icon: "success",
         title: "Hurrah!",
         text: "User Created Successfully",
         confirmButtonText: "ok",
       });
+      navigate("/");
     });
   };
 

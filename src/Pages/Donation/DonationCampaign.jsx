@@ -7,7 +7,7 @@ const DonationCampaign = () => {
   const [donationData, setDonationData] = useState([]);
   useEffect(() => {
     axios
-      .get(" https://sever-side-6d8lipgds-sharif355.vercel.app/donations")
+      .get(" https://sever-side-lit6jv4i9-sharif355.vercel.app/donations")
       .then((res) => {
         setDonationData(res.data);
       });

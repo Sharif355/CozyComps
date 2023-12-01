@@ -11,7 +11,7 @@ const PrivateRoute = ({ children }) => {
     return <CircularWithValueLabel></CircularWithValueLabel>;
   }
   if (user) {
-    return { children };
+    return children;
   }
   return <Navigate to="/login" state={{ from: location }} replace />;
 };

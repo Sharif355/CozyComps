@@ -14,7 +14,7 @@ const AllPets = () => {
   const [sortByDate, setSortByDate] = useState("des");
 
   useEffect(() => {
-    fetch(" https://sever-side-6d8lipgds-sharif355.vercel.app/allPets")
+    fetch(" https://sever-side-lit6jv4i9-sharif355.vercel.app/allPets")
       .then((response) => response.json())
       .then((data) => {
         setLoadedPets(data);
