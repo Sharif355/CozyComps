@@ -17,7 +17,8 @@ import Error from "../Error/Error";
 import PrivateRoute from "./PrivateRoute";
 import AllUsers from "../Pages/Dashboard/AllUsers";
 import AllDonations from "../Pages/Dashboard/AllDonations";
-import AllPets from "../Pages/Dashboard/AllPets";
+import AllPets from "../Pages/PetListing/AllPets";
+import Pets from "../Pages/Dashboard/Pets";
 
 const routers = createBrowserRouter([
   {
@@ -88,7 +89,7 @@ const routers = createBrowserRouter([
         path: "allPet",
         element: (
           <PrivateRoute>
-            <AllPets></AllPets>
+            <Pets></Pets>
           </PrivateRoute>
         ),
       },
